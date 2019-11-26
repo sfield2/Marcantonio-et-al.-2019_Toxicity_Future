@@ -1,13 +1,18 @@
 # For Primary Analysis 
 Contamined sites <- downloaded at "https://ofmpub.epa.gov/apex/cimc/f?p=100:10:::NO:::"
-                      # You can filter these results based on researchers specifications 
-                      # We filtered by all Brownfield, RCRA, and Superfund NPL Sites that had corrective action taken, 
-                      # or grant money allocated for corrective action as of February, 2019
-                        # For replication purposes the following files are located in Github repository NEED TO FIX THIS 
-                          # ALL_CIMC <- 
-                          # SUPERFUND_CIMC <- 
-                          # BROWNFIELD_CIMC <-
-                          # RCRA_CA_CIMC <-
+                      # Using a full list from the above link will give you all contamianted sites listed at date-of-download
+                      # however it is difficult to sort and the database does not contain the data necessary to filter based on 
+                      # specifications like 'types of grant/remeditation efforts/etc'
+                      # However, you can sort based on those specifications on the CIMC webpage.
+                      # BUT if you do this, sometimes lat/long data will not be included in subset data, 
+                      # so you will need to import the subset data.CSV and use it as a filter for the 
+                      # Contaminated sites Full list which should download with correct spatial data
+                        # We have shown example of this in ANALYSIS, and for direct replication purposes the 
+                        # following files are located in this repository under branch "Data for replication" 
+                          # ALL_CIMC <- All contaminated sites at time of download (Feb. 2019)
+                          # SUPERFUND_CIMC <- Superfund sites with corrective action at time of download (Feb. 2019) 
+                          # BROWNFIELD_CIMC <- Brownfield sites with corrective action at time of download (Feb. 2019) 
+                          # RCRA_CA_CIMC <- Brownfield sites with corrective action at time of download (Feb. 2019) 
 
 UAA Social Data <- downloaded at "https://gain-uaa.nd.edu/"
                       # Link embedded in "get up to speed" at bottom of webpage
@@ -16,8 +21,9 @@ UAA Social Data <- downloaded at "https://gain-uaa.nd.edu/"
 UAA Flood Data <- downloaded at "https://gain-uaa.nd.edu/"
                       # Link embedded in "get up to speed" at bottom of webpage
                       # Flood data located in UAA Data.zip folder titled 'Flood Data'
-                        # For replication purposes, the expanded flood data used in our analysis is located 
-                        # in github repository '....' NEED TO FIX THIS
+                        # For replication purposes, the expanded flood data we used is located 
+                        # in this repository under branch "Data for replication"  
+                         # UAA_Flood_prob_ALL <- probability of flood for each UAA considered city from 2021-2061 as modelled by ND GAIN/UAA
 
 UAA Spatial Data <- dowloaded at "uaa_index" 
                       # Includes census tract boundaries of all UAA ND Gain considered cities
