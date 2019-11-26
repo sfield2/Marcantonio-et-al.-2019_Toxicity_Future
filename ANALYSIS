@@ -26,9 +26,12 @@ ALL_datum[,1]<-ALL$Longitude
 ALL_datum[,2]<-ALL$Latitude
 ALL_site <- SpatialPointsDataFrame(coords=ALL_datum,ALL,proj4string = CRS('+proj=longlat +datum=NAD83 +no_defs +ellps=GRS80 +towgs84=0,0,0'))
 
-# Query full list by specified subsets downloaded from CIMC list
-# We sorted the full Contaminated sites.csv manually to ensure data was valid at time of analysis. We assume this will change in future. 
-# Lists of data we used are present in DATA_ACCESS_DIRECTORY 
+# ALL_site contains every contaminated site in CIMC list, however it is difficult to sort and the database does 
+# not contain the data necessary to filter based on specifications like 'types of grant/remeditation efforts/etc'
+# Therefore, you can sort based on those specifications on the CIMC webpage 
+# However if you do this, sometimes lat/long data will not be included in subset data, so you will need to import the subset data.CSV 
+# and use it as a filter for the ALL_site list which should download with correct spatial data
+# We have done this below for example, and data we used is in repository -> branch 'data_for_replication'
 
 SF <- read.csv("C:/Users/username/Documents/projectname/DATA_ACCESS_DIRECTORY/SUPERFUND_CIMC.csv",header=T)
 SF_site <- subset(ALL_site, Map.Site.CSV %in% SF$Map.Site.CSV)
