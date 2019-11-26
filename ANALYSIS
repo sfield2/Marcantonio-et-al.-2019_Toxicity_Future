@@ -34,7 +34,7 @@ SF <- read.csv("C:/Users/username/Documents/projectname/DATA_ACCESS_DIRECTORY/SU
 SF_site <- subset(ALL_site, Map.Site.CSV %in% SF$Map.Site.CSV)
 BF <- read.csv("C:/Users/username/Documents/projectname/DATA_ACCESS_DIRECTORY/BROWNFIELD_CIMC.csv",header=T)
 BF_site <- subset(ALL_site, Map.Site.CSV %in% BF$Map.Site.CSV)
-RCRA <- read.csv("C:/Users/username/Documents/projectname/DATA_ACCESS_DIRECTORY/RCRA_CA_CIMC.csv",header=T)
+RCRA <- read.csv("C:/Users/username/Documents/projectname/DATA_ACCESS_DIRECTORY/RCRA_CIMC.csv",header=T)
 RCRA_site <- subset(ALL_site, Map.Site.CSV %in% RCRA$Map.Site.CSV)
 FC_site <- bind(RCRA_site, BF_site, SF_site)
 
