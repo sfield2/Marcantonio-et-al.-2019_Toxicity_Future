@@ -1,11 +1,5 @@
-This directory contains code written in R for all analyses, and a directory for all data used, in:
+This directory contains data necessary to replicate the analyses produced for the publication
 
-R. Marcantonio, S. Field, P. Regan. 2019. Toxic Trajectories Under Future Climate Conditions. PLOS ONE.
-
-Data Download
-Directory for data used in this research is provided in READ ME file entitled "DATA ACCESS DIRECTORY"
-
-Analysis
-Script used for analysis is an R script, entitled "ANALYSIS.R"
+R. Marcantonio, S. Field, P. Regan. 2019. Toxic Trajectories Under Future Climate Conditions. Under review in PLOS ONE.
 
 If you have questions, email Sean Field (sfield2@nd.edu)
